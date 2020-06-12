@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
 import './App.css';
 import axios from 'axios'
-import character from './components/Character'
+import Character from './components/Character'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
-  const [people,setPeople]=useState()
+  // const [peopleList,setPeopleList]=useState()
 
   
 
@@ -19,7 +19,10 @@ const App = () => {
     
     axios.get(' https://swapi.py4e.com/api/people/')
     .then(response=>{
-      console.log('This is inside the useEffect',response)
+       console.log(response)
+       
+      
+     
     })
     .catch(error=>{
       console.log('something is not right',error)
@@ -29,6 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      {/* <Character/> */}
     </div>
   );
 }

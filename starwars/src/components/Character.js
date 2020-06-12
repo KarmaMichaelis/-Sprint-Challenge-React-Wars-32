@@ -1,5 +1,11 @@
 // Write your Character component here
+import React,{useState} from 'react';
 
-function character(props){
+function Character(props){
+    const [peopleList,setPeopleList]=useState()
     
+    
+
 }
+//export default Character
+
