@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import axios from 'axios'
 
@@ -14,7 +14,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
  
-  useEffect(()=>{
+  
     
     axios.get(' https://swapi.py4e.com/api/people/')
     .then(response=>{
@@ -24,8 +24,7 @@ const App = () => {
       console.log('something is not right',error)
     })
 
-  },[])
-
+  
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
