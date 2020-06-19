@@ -1,11 +1,18 @@
 // Write your Character component here
-import React,{useState} from 'react';
+import React from 'react';
 
-function Character(props){
-    const [peopleList,setPeopleList]=useState()
+const Character=(props)=>{
+    //const [peopleList,setPeopleList]=useState()
     
-    
+    return(
+
+        <div>
+            {props.data}
+        </div>
+
+
+    )
 
 }
-//export default Character
+export default Character;
 
